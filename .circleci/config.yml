@@ -5,7 +5,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/node:10.17
+      - image: cicleci/node:10.17
     steps:
       - checkout
       - node/install-packages

@@ -1,0 +1,18 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "Automation Project for Learning",
+  "main": "index.js",
+  "scripts": {
+    "remote": "testcafe chrome ./tests --skip-js-errors",
+    "testremote": "testcafe -r xunit:/tmp/test-results/testcafe/results.xml",
+    "test:firefox": "testcafe firefox ./tests",
+    "test:chrome-html": "testcafe chrome ./tests --reporter html:reports/Test_Result.html"
+  },
+  "author": "Chinmay Singh",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "testcafe": "^1.16.1",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

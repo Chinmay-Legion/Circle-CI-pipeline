@@ -1,0 +1,12 @@
+{ 
+    "browsers": "chrome",
+    "src": "tests/",
+    "quarantineMode": true,
+    "skipJsErrors": true, 
+    "concurrency": 1,
+    "selectorTimeOut": 20000,
+    "assertionTimeOut": 20000,
+    "pageLoadTimeOut": 20000,
+    "speed": 1
+
+} 

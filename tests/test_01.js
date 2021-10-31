@@ -11,7 +11,7 @@ test("User Login with valid credentials", async (t) => {
   const submitButton = Selector("#btnLogin");
   const dashboard = Selector("#content > div > div.head > h1");
 
-  await t.expect(productVersion.innerText).contains("OrangeHRM 4");
+  await t.expect(productVersion.innerText).contains("OrangeHRM 4.7");
   await t.typeText(loginName, "Admin", { paste: true });
   await t.typeText(password, "admin123", { paste: true });
   await t.click(submitButton);

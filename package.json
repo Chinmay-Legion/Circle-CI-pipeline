@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "remote": "testcafe chrome ./tests --skip-js-errors",
+    "envsetup":"npm install --no-save -E",
     "testremote": "testcafe -r xunit:/tmp/test-results/testcafe/results.xml",
     "test:chrome-html": "testcafe chrome ./tests --reporter html:reports/Test_Result.html"
   },

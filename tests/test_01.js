@@ -15,7 +15,6 @@ test("User Login with valid credentials", async (t) => {
   await t.typeText(loginName, "Admin", { paste: true });
   await t.typeText(password, "admin123", { paste: true });
   await t.click(submitButton);
-
   await t.expect(dashboard.exists).ok();
   await t.expect(dashboard.innerText).contains("Dashboard");
 });

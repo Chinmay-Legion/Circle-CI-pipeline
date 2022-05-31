@@ -1,12 +1,17 @@
 { 
-    "browsers": "chrome",
+    "browsers":"chrome",
     "src": "tests/",
-    "quarantineMode": true,
+    "quarantineMode": false,
     "skipJsErrors": true, 
     "concurrency": 1,
     "selectorTimeOut": 20000,
     "assertionTimeOut": 20000,
     "pageLoadTimeOut": 20000,
-    "speed": 1
+    "speed": 1,
+    "reporter": {
+        "name": "xunit",
+        "output": "reports/report.xml"
+    },
+    "videoPath": "reports/screen-captures"
 
 } 

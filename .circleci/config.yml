@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@4.1.0
+  node: circleci/node@16.15
   browser-tools: circleci/browser-tools@1.1.0
 jobs:
   test:
@@ -9,7 +9,6 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
       - run:
           command: npm run envsetup
       - run:
